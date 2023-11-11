@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+
+</head>
+<style>
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        max-width: 800px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+    
+    h1 {
+        text-align: center; 
+    }
+    
+    label {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    
+    select,
+    input {
+        display: inline-block;
+        width: calc(50% - 4px); /* คำนวณความกว้างให้แบ่งเท่าๆ กันและลดการชนกับ margin */
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; /* คำนวณขนาดของ element รวมกับ padding และ border */
+    }
+            </style>
+<body>
+    <div class="container">
+        <h1>คำร้องขอจดทะเบียนเพิ่ม-ถอน รายวิชา</h1>
+        <label for="requestType">ชื่อ:</label>
+        <select id="requestType" name="requestType">
+            <option value="Mr.">นาย</option>
+            <option value="Ms.">นางสาว</option>
+            <option value="Mrs.">นาง</option>
+        </select>
+
+        <label for="fullName">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="กรุณากรอกชื่อ-นามสกุล">
+
+        <label for="address">ที่อยู่:</label>
+        <textarea id="address" name="address" placeholder="กรุณากรอกที่อยู่"></textarea>
+    </div>
+   
+
+
+
